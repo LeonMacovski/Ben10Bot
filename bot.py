@@ -146,6 +146,6 @@ def update_database(user):
         db.update({'points': new_num}, users.id == id)
 
 
-# The bot ID
+# The bot token
 # Gotten from the discord developer website
 client.run('')
