@@ -117,7 +117,7 @@ async def create_guess():
     guessed_aliens.clear()
     random_alien = random.choice(list(aliens.keys()))
     current_alien_guessing = random_alien
-    embed = discord.Embed(title='Type ~ben guess [alien] to guess the alien', color=0x00ff00)
+    embed = discord.Embed(title='Type ~b guess [alien] to guess the alien', color=0x00ff00)
     embed.set_image(url=aliens[random_alien].image)
     await client.get_channel(channel_id).send(embed=embed)
     await asyncio.sleep(35)
